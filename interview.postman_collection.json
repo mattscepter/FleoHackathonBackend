@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "4cd3d9a9-b5da-4a30-b131-721249d9438b",
+		"name": "interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"New\",\r\n    \"totalSales\":1000,\r\n    \"targetSales\":2000,\r\n    \"parent\":\"61c81832af8f76e437f5d292\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategory",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"New\",\r\n    \"totalSales\":1000,\r\n    \"targetSales\":5000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/update/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTopLevel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "getParents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "getChildren",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/getChildren/61c81832af8f76e437f5d292",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getChildren",
+						"61c81832af8f76e437f5d292"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOnlyCategory",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/deleteOnlyCategory/61c81845af8f76e437f5d294",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deleteOnlyCategory",
+						"61c81845af8f76e437f5d294"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCompleteLink",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/deleteCompleteLink/61c822da661ecbec65ffa3ef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deleteCompleteLink",
+						"61c822da661ecbec65ffa3ef"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
